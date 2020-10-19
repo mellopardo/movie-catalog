@@ -1,0 +1,39 @@
+
+.page {
+    background-color: #141414;
+}
+
+@media screen and (min-width:1200px) {
+    .content-page {
+        margin-left: 101px;
+    }
+}
+
+.no-list {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+li {
+    margin: 5px;
+}
+
+h1 {
+    margin-top: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: 3px;
+}
+h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+p{
+    color: white;
+}
