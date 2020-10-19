@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-import '../styles/homePage.css';
+import '../pages/page.css';
+import Page from './Page';
 import Banner from '../components/banner/Banner';
-import Footer from "../components/footer/Footer";
-import Menu from '../components/menu/Index';
 import Carousel from "../components/carousel/Carousel";
-
-
 
 const HomePage = () => {
 
@@ -38,17 +35,13 @@ const HomePage = () => {
     }
 
     return (
-        <div className='page'>
-            <Menu></Menu>
-            <div className='content-page'>
-                <Banner item={trendingAll[9]}></Banner>
-                <div>
-                    <Carousel items={trendingMovies} title='Trending Movies'></Carousel>
-                    <Carousel items={trendingSeries} title='Trending TV Shows'></Carousel>
-                </div>
-                <Footer></Footer>
+        <Page>
+            <Banner item={trendingAll[9]}></Banner>
+            <div>
+                <Carousel items={trendingMovies} title='Trending Movies'></Carousel>
+                <Carousel items={trendingSeries} title='Trending TV Shows'></Carousel>
             </div>
-        </div>
+        </Page>
     );
 }
 export default HomePage;

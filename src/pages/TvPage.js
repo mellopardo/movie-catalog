@@ -1,9 +1,7 @@
 import React, { useState , useEffect} from 'react';
-import '../styles/homePage.css';
 import Banner from '../components/banner/Banner';
-import Footer from "../components/footer/Footer";
-import Menu from '../components/menu/Index';
-import Carousel from "../components/carousel/Carousel";
+import Carousel from '../components/carousel/Carousel';
+import Page from './Page';
 
 
 const TvPage = () =>{
@@ -45,20 +43,16 @@ const TvPage = () =>{
         return 'Cargando';
     };
 
-    return(
-        <div className='page'>
-        <Menu></Menu>
-         <div className='content-page'>
-             <Banner item={trendingTvShow[0]}></Banner>
-             <div>
-                 <Carousel items={popularTvShow} title='Popular TV Shows'></Carousel>
-                 <Carousel items={topRatedTv} title='Top Rated TV Shows'></Carousel>
-                 <Carousel items={currentlyTvShow} title='Currently Airing TV Shows'></Carousel>
-                 <Carousel items={todayShow} title='TV Shows Airing Today'></Carousel>
-             </div>
-             <Footer></Footer>
-         </div>
-     </div>
+    return (
+        <Page>
+            <Banner item={trendingTvShow[0]}></Banner>
+            <div>
+                <Carousel items={popularTvShow} title='Popular TV Shows'></Carousel>
+                <Carousel items={topRatedTv} title='Top Rated TV Shows'></Carousel>
+                <Carousel items={currentlyTvShow} title='Currently Airing TV Shows'></Carousel>
+                <Carousel items={todayShow} title='TV Shows Airing Today'></Carousel>
+            </div>
+        </Page>
     );
 }
 export default TvPage;

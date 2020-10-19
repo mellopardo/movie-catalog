@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/homePage.css';
+import Page from './Page';
 import Banner from '../components/banner/Banner';
-import Footer from "../components/footer/Footer";
-import Menu from '../components/menu/Index';
 import Carousel from "../components/carousel/Carousel";
 
 const MoviesPage = () => {
@@ -45,19 +43,15 @@ const MoviesPage = () => {
     }
 
     return (
-        <div className='page'>
-            <Menu></Menu>
-            <div className='content-page'>
-                <Banner item={trendingMovies[0]}></Banner>
+        <Page>
+             <Banner item={trendingMovies[0]}></Banner>
                 <div>
                     <Carousel items={popularMovies} title='Popular Movies'></Carousel>
                     <Carousel items={topRatedMovies} title='Top Rated Movies'></Carousel>
                     <Carousel items={upComingMovies} title='Up Coming Movies'></Carousel>
                     <Carousel items={nowPlayingMovies} title='Now Playing Movies'></Carousel>
                 </div>
-                <Footer></Footer>
-            </div>
-        </div>
+        </Page>
     );
 
 };

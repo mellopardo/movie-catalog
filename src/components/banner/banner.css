@@ -11,6 +11,7 @@
     position: relative;
     
 }
+
 .container-background-movie::after{
     position: absolute;
     top: 0;
@@ -20,6 +21,7 @@
     display: block;
     content: "";
     background-image: linear-gradient(0deg,#000 0,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+    
 }
 
 .background-image-movie {
@@ -56,6 +58,7 @@
         left: 45%;
     }
 }
+
 @media screen and (min-width:1021px){
     .banner{
         display: flex;
@@ -71,6 +74,7 @@
 
         background-image: linear-gradient(to right,#000 0,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
     }
+
     .text-container{
         width: 34%;
         height: auto;
@@ -81,8 +85,7 @@
     .info{
         position:absolute;
         width:520px;
-        
-        
+           
     }
 
 }
