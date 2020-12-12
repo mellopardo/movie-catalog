@@ -1,0 +1,14 @@
+.content-details{
+    display: flex;
+}
+
+.header-details{
+    margin-left: 45px;
+}
+.content-details ul{
+    list-style: none;
+}
+
+.content-details ul.icons li{
+    display: inline-block;
+}

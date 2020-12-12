@@ -22,7 +22,7 @@
     }
 }
 
-.navigation .no-list {
+.navigation .no-list{
     list-style: none;
     display: flex;
     margin: auto;

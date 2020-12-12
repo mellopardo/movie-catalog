@@ -3,7 +3,6 @@ import Banner from '../components/banner/Banner';
 import Carousel from '../components/carousel/Carousel';
 import Page from './Page';
 
-
 const TvPage = () =>{
     const [trendingTvShow, setTrendingTvShow] = useState ();
     const [popularTvShow, setPopularTvShow] = useState ();
@@ -47,10 +46,10 @@ const TvPage = () =>{
         <Page>
             <Banner item={trendingTvShow[0]}></Banner>
             <div>
-                <Carousel items={popularTvShow} title='Popular TV Shows'></Carousel>
-                <Carousel items={topRatedTv} title='Top Rated TV Shows'></Carousel>
-                <Carousel items={currentlyTvShow} title='Currently Airing TV Shows'></Carousel>
-                <Carousel items={todayShow} title='TV Shows Airing Today'></Carousel>
+                <Carousel  link='/tv/category/popular' items={popularTvShow} title='Popular TV Shows' type='tv'></Carousel>
+                <Carousel  link='/tv/category/top_rated' items={topRatedTv} title='Top Rated TV Shows' type='tv'></Carousel>
+                <Carousel  link='/tv/category/on_the_air' items={currentlyTvShow} title='Currently Airing TV Shows' type='tv'></Carousel>
+                <Carousel  link='/tv/category/airing_today' items={todayShow} title='TV Shows Airing Today' type='tv'></Carousel>
             </div>
         </Page>
     );

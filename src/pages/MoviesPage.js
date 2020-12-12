@@ -46,10 +46,10 @@ const MoviesPage = () => {
         <Page>
              <Banner item={trendingMovies[0]}></Banner>
                 <div>
-                    <Carousel items={popularMovies} title='Popular Movies'></Carousel>
-                    <Carousel items={topRatedMovies} title='Top Rated Movies'></Carousel>
-                    <Carousel items={upComingMovies} title='Up Coming Movies'></Carousel>
-                    <Carousel items={nowPlayingMovies} title='Now Playing Movies'></Carousel>
+                    <Carousel link='/movie/category/popular' items={popularMovies} title='Popular Movies' type='movie'></Carousel>
+                    <Carousel link='/movie/category/top_rated'items={topRatedMovies} title='Top Rated Movies' type='movie'></Carousel>
+                    <Carousel link='/movie/category/upcoming'items={upComingMovies} title='Up Coming Movies' type='movie'></Carousel>
+                    <Carousel link='/movie/category/now_playing'items={nowPlayingMovies} title='Now Playing Movies' type='movie'></Carousel>
                 </div>
         </Page>
     );

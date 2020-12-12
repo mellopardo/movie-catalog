@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import '../pages/page.css';
 import Footer from "../components/footer/Footer";
 import Menu from '../components/menu/Index';
+import SearchBar from "../components/searchBar/SearchBar";
 
+const Page = ({ children, showSearch = false, onSearchClose }) => {
+    const [showSeacherBar, setShowSearchBar] = useState(showSearch);
 
-const Page = ({ children }) => {
+    const toggleSearch = () => {
+        if (onSearchClose) { 
+            return onSearchClose(); 
+        }
+        setShowSearchBar(!showSeacherBar);
+    }
+
     return (
         <div className='page'>
-            <Menu />
+            { showSeacherBar && <SearchBar onClose={toggleSearch} /> }
+            <Menu onSearchClick={toggleSearch} />
             <div className='content-page'>
                 {children}
                 <Footer />

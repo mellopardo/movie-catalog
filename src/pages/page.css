@@ -23,16 +23,79 @@ h1 {
     margin-top: 0;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 1.1;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
-h2{
+
+h2 {
     color: white;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 3px;
-    font-size: 15px;
+    letter-spacing: 2px;
+    font-size: 23px;
+    font-weight: 300;
 }
-p{
+
+p {
     color: white;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 26px 10px 8px 10px
+}
+
+/*grid page */
+
+.grid-page {
+    padding-top: 20px; /*50px;*/
+}
+
+.grid-page h1 {
+    margin-top: 15px /*40px*/;
+    padding: 11px 0 0 44px;/*44*/
+}
+
+.grid-results {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 39px 16px 39px;
+
+}
+
+.search-page-grid{
+    padding-top: 100px;
+}
+
+.search-page-grid h1{
+   
+    padding:26px 0 0 55px;
+}
+
+.grid-results .card {
+    width: 33.3333333%;
+    padding: 5px;
+}
+
+.search-page .card {
+    margin: 0;
+}
+
+@media screen and (min-width: 640px) {
+    .grid-results .card {
+        width: 25%;
+
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .grid-results .card {
+        width: 18%;
+
+    }
+
 }

@@ -1,0 +1,35 @@
+.footer-container{
+    padding: 35px;
+    margin-top: 42px;
+    padding-bottom:22px ;
+}
+
+.footer-container-text a{
+    margin: 0;
+    font-weight: 100;
+    color: #80868b;
+    font-size: 10px;
+    
+}
+
+.footer-media{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 8px;
+}
+.footer-media li{
+    margin:0;
+}
+
+.footer-container p{
+    color: #80868b;
+    font-size: 12px;
+}
+
+@media screen and (max-width:1020px) {
+    .footer-container{
+        margin-top: 0px;
+        padding-bottom:44px ;
+    }
+}
