@@ -16,10 +16,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "prettier --write \"src/**/*.\""
+    "lint": "prettier --write \"./src/**/*.js\""
   },
   "eslintConfig": {
     "extends": ["react-app", "prettier", "prettier/react"]
+  },
+  "prettier":{
+    "singleQuote": true
   },
   "browserslist": {
     "production": [
