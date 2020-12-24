@@ -38,9 +38,13 @@ const HomePage = () => {
     return 'cargando';
   }
 
+  const getRandomBanner = () => {
+    return Math.floor(Math.random() * trendingAll.length);
+  };
+
   return (
     <Page>
-      <Banner item={trendingAll[9]}></Banner>
+      <Banner item={trendingAll[getRandomBanner()]}></Banner>
       <div>
         <Carousel
           link="/trending/movie/week"
